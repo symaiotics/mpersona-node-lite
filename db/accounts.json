@@ -1,0 +1,23 @@
+{
+  "accounts": [
+    {
+      "id": "a5cf1431-5650-4414-bc3c-11a2c08c1f3d",
+      "uuid": "a5cf1431-5650-4414-bc3c-11a2c08c1f3d",
+      "username": "janak",
+      "preferredLng": "en",
+      "roles": [
+        "user"
+      ],
+      "active": true,
+      "momentCreated": "2023-12-13T12:27:00.532Z",
+      "salt": "$2b$10$zGKE/gYR3dNHnX5sW57Rlu",
+      "password": "$2b$10$zGKE/gYR3dNHnX5sW57RluQMwDH4YQd5vny/HT72pFDUWva0yv8gu",
+      "momentLastLogin": "2023-12-13T12:27:29.306Z",
+      "passwordResetRequired": null,
+      "passwordResetRequested": null,
+      "passwordResetToken": null,
+      "momentPasswordResetTokenExpires": null,
+      "momentFirstLogin": "2023-12-13T12:27:29.306Z"
+    }
+  ]
+}

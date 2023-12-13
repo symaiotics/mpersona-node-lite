@@ -1,0 +1,36 @@
+{
+  "name": "mpersona-node-lite",
+  "version": "0.0.1",
+  "description": "A light-weight implementation of mPersona with minimal dependencies on top of the OpenAI 4.x API",
+  "main": "index.js",
+  "scripts": {},
+  "nodemonConfig": {
+    "ignore": [
+      "db/*.json"
+    ]
+  },
+  "keywords": [
+    "graph",
+    "ai",
+    "openai",
+    "gpt4",
+    "gpt-3-5",
+    "personas"
+  ],
+  "author": "Symaiotics Corporation",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.10.2",
+    "axios": "^1.4.0",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.1",
+    "lowdb": "^6.1.1",
+    "openai": "^4.15.0",
+    "uuid": "^9.0.0",
+    "ws": "^8.13.0"
+  }
+}
