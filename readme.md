@@ -1,6 +1,6 @@
 # mPersona Lite
-mPersona is a tool to build custom personas to facilitate interaction with Large Language Model services like Open AI's GPT4.
-This 'lite' version is tailored for organizations seeking a wrapper for the OpenAI API and to use streaming webapps for simultaneous persona interactions.
+mPersona is a tool to build custom personas to facilitate interaction with Large Language Model services like Open AI's GPT4, Anthropic Claude, and Azure OpenAI deployed GPT-based models.
+This 'lite' version is tailored for organizations seeking a wrapper for numerous LLMs and to use streaming webapps for simultaneous persona interactions.
 
 ## About
 mPersona is built in 2 parts, a Vue.js web interface and a Node.js server side application (this package).
@@ -11,7 +11,8 @@ The Node.js application uses the following key libraries
 - jsonwebtoken for creating session tokens
 - openai to faclitate the OpenAI API connection
 - ws for realtime websockets to facilitate token streams to the ui
-
+- @anthropic-ai/sdk for Anthropic if applicable
+- @azure/openai for Azure OpenAI if applicable
 
 ## Configuration
 The application also requires environment variables to operate
@@ -22,8 +23,9 @@ The application also requires environment variables to operate
 - TIMEOUT=  //The timeout by which a Promise will fail (i.e. 30000 is 30 seconds)
 - JWT_SECRET= //A secret for signing JWT tokens
 - OPEN_API_KEY= //Your API key to interact with your own instance of OpenAI's API
-
-The storage account requires a container named /images to be created and publicly accessible as read only.
+- ANTHROPIC_API_KEY= //If you are using Anthropic's API
+- AZURE_OPENAI_KEY= // If you are using Azure OpenAI in the Portal
+- AZURE_OPENAI_ENDPOINT= //The endpoint provided by Azure OpenAI in the Portal
 
 
 # Application Server License
